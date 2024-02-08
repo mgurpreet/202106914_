@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+}
+
+/* giving the height 100% respective to its parent It mean if the height of the parent is 100px then we give the 100% height of its child then it automatically taks its parent height */
+
+.h-100p {
+    height: 100%;
+}
+
+/* giving this 100vh height means use use vh unit in which element takes its height  the from the screen */
+.h-100 {
+    height: 100vh;
+}
+
+.navbar-image {
+    width: 70px;
+    height: 40px;
+    object-fit: cover;
+
+}
+/*  to centering the element in vertical direction */
+.flex-vc {
+    display: flex;
+    align-items: center;
+}
+
+
+/*  to centering the element in horizontal direction */
+.flex-hc {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    padding: .5rem 1rem;
+    position: relative;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background: #C2D9FF;
+    left: 0;
+    color: black;
+    bottom: 0;
+    transition: all ease .3s;
+    z-index: -1;
+}
+
+ul li a:hover::after {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-tabs {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    content: "";
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.one {
+    /* background-color: lightcoral; */
+    /* margin-top: 60px; */
+}
+
+.two {
+    /* background-color: lightgreen; */
+    background-image: url('./images/background/parallax.jpg');
+    background-attachment: fixed;
+
+}
+
+.three {
+    background-color: lightgrey;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.parallax {
+    height: 100%;
+    /* border: 1px solid; */
+    font-weight: bold;
+    color: white;
+}
+
+.text-center p {
+    font-size: 1.7rem !important;
+    /* margin: 0 8rem; */
+
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSection {
+    max-width: 900px; /* Set a maximum width for the video container */
+    margin: 0 auto;   /* Center the container horizontally */
+}
+
+.videoSection iframe {
+    width: 100%;      /* Make the iframe fill the width of its container */
+    height: 300px;    /* Set the height of the iframe */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+.Our BTS {
+    width: 250px;
+    height: 200px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+.box-section {
+    margin-top: 1rem !important;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: 0 1rem;
+}
+
+.ourBTS .text-center {
+    padding: 1rem 0;
+}
+
+
+.aboutSection {
+    margin-top: 50px;
+    background-image: url('./images/background/parallax.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.aboutSection p {
+    font-size: 1.7rem;
+}
+
+
+.footer {
+    height: 10vh;
+    background-color: lightblue;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+
+}
+
+.flex-e {
+    display: flex;
+    align-items: end;
+}
+
+
+.career-section {
+    background-image: url('./images/background/bgimage1.jpg');
+}
+
+.points h3 {
+    color: #050000;
+}
+
+.points ul li {
+    list-style: inside;
+}
+
+.ourBTS {
+    margin-top: 3rem;
+}
+
+.future {
+    padding: 3rem;
+    color: white;
+
+}
+
+ul li {
+    color: white;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #070707;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #339933;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.ticketsection {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+select,
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.career2section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .under500 {
+        width: 100%;
+    }
+
+    #BTS {
+        overflow: scroll;
+    }
+
+    .mission {
+        font-size: 1.1rem;
+        padding: 1.3rem;
+    }
+}
+
+
+.overFlow-scroll{
+    overflow: scroll;
+}
+
+.SIDHUMOOSEWALA{
+    position: absolute;
+    top: 30%;
+    color: black;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    -webkit-text-stroke: 5px rgba(12, 182, 194, 0);
+
+}

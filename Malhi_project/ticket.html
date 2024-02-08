@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="flex-vc flex-sb h-100p overFlow-scroll">
+                <div class="nav-brand-image cursor-pointer flex-vc flex-hc">
+                    <img src="./images/logos/logos.jpg" alt="" class="navbar-image">
+                </div>
+                <div class="nav-tabs">
+                    <ul class="flex-vc">
+                        <li class="cursor-pointer">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="cursor-pointer">
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li class="cursor-pointer">
+                            <a href="about.html">
+                                About us
+                            </a>
+                        </li>
+                        <li class="cursor-pointer">
+                            <a href="career.html">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="cursor-pointer">
+                            <a href="ticket.html" class="">
+                                ticket
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticketsection">
+            <div class="container">
+                <h1>SIDHUMOOSEWALA journey Ticket Purchase</h1>
+                <form action="purchase.php" method="post">
+                    <label for="ticketType">Select Ticket Type:</label>
+                    <select id="ticketType" name="ticketType">
+                        <option value="adult">Adult</option>
+                        <option value="child">Child</option>
+                        <option value="senior">Senior</option>
+                    </select>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                    <button type="submit">Purchase Tickets</button>
+                </form>
+            </div>
+</body>
+
+</html>
